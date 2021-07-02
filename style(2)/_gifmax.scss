@@ -1,0 +1,26 @@
+.contenedor {
+  display: flex;
+
+  .x {
+    align-content: flex-end;
+    margin-top: 150px;
+    margin-right: 200px;
+  }
+  .imgmax {
+    width: 695px;
+    height: 385px;
+    background-color: red;
+    margin: auto;
+    margin-top: 150px;
+  }
+}
+.abajo {
+  display: flex;
+  h2 {
+    align-items: flex-start;
+    margin-left: 250px;
+  }
+  .favorito {
+    margin-left: 250px;
+  }
+}

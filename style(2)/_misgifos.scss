@@ -1,0 +1,205 @@
+$violeta: #572ee5;
+$violeta-op: rgba(87, 46, 229, 0.9);
+$violeta-op2: rgba(87, 46, 229, 0.6);
+$turquesa: #50e3c2;
+$gris-claro: #f3f5f8;
+$gris-medio: #9cafc3;
+$gris-oscuro: #37383c;
+
+$gris-trending-oscuro: #222326;
+$negro: #000000;
+$blanco: #ffffff;
+$blanco-op: rgba(255, 255, 255, 0.7);
+
+@mixin menu-mobile {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+@mixin menu-desktop {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@mixin titulos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: $violeta;
+}
+
+@mixin textos-mobile {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+}
+
+$blanco-modal: rgba(255, 255, 255, 0.9);
+$negro-modal: #37383cea;
+
+#divmisgifos {
+  display: block;
+
+  img#icongifos {
+    display: block;
+    margin: auto;
+  }
+  .misgifos {
+    font-size: 25px;
+    color: #572ee5;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+.btn-generico {
+  margin: 70px auto 5px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #572ee5;
+  width: 127px;
+  height: 50px;
+  border-radius: 25px;
+  align-items: center;
+  font-family: "open-bold";
+  font-size: 13px;
+  color: #572ee5;
+  letter-spacing: 0;
+  text-align: center;
+}
+#gridmisgifos {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 29px;
+  .ps {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+#misgifos-creados {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resultados-misgifos {
+  //el contenedor con las 4 columnas
+  margin: 38px 10px 53px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resultados-gif-box-misgifos {
+  //la caja con cada gif
+  width: 156px;
+  height: 120px;
+  overflow: hidden;
+  margin: 0 10px 25px 10px;
+}
+
+.gif-acciones-resultados-misgifos {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .resultados-misgifos {
+    //el contenedor con las 4 columnas
+    margin: 38px 10px 53px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .resultados-gif-box-misgifos {
+    //la caja con cada gif
+    width: 220px;
+    height: 200px;
+    margin: 0 10px 25px 10px;
+  }
+
+  .gif-acciones-resultados-misgifos {
+    position: absolute;
+    z-index: 0;
+    background-color: $violeta-op2;
+    width: 220px;
+    height: 200px;
+  }
+
+  .iconos-acciones-gif {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .iconos-acciones-box {
+    width: 32px;
+    height: 32px;
+    background-color: $blanco-op;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 6px;
+    border: none;
+  }
+
+  .borrar {
+    cursor: pointer;
+  }
+
+  .download {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .max {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .iconos-acciones-box:hover {
+    background-color: $blanco;
+  }
+
+  .textos-descripcion-gif-misgifos {
+    position: absolute;
+    bottom: 30px;
+    left: 18px;
+  }
+
+  .user-gif-misgifos {
+    @include textos-mobile;
+    text-align: left;
+    color: $blanco;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0;
+    margin-bottom: 6px;
+  }
+
+  .titulo-gif-misgifos {
+    @include textos-mobile;
+    text-align: left;
+    color: $blanco;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  }
+
+  .resultados-gif-box-misgifos:hover .gif-acciones-resultados-misgifos {
+    display: block;
+  }
+}

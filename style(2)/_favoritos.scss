@@ -1,0 +1,40 @@
+#divfavorito {
+  display: block;
+}
+
+img#iconfavorito {
+  display: block;
+  margin: auto;
+}
+.titulos {
+  margin: auto;
+}
+.titulo {
+  font-size: 25px;
+  color: #572ee5;
+  text-align: center;
+  line-height: 30px;
+}
+#grid1 {
+  display: block;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 29px;
+}
+.botonvermas {
+  display: none;
+  @extend %botones;
+}
+.favsincontenido {
+  display: flex;
+  margin: auto;
+  padding-top: 50px;
+}
+.pfavsincontenido {
+  font-family: "open-bold";
+  font-size: 22px;
+  color: #50e3c2;
+  text-align: center;
+  line-height: 33px;
+  padding-bottom: 50px;
+}
