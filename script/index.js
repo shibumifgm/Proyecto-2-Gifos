@@ -354,6 +354,8 @@ let autocompletar = async () => {
 
   closesearch.onclick = ()=>{
     ul.style.display = "none"
+    contenedor = document.getElementById("div2");
+    contenedor.style.display = "none"
     input.value = ""
   imagenbuscar.setAttribute("src", 'assets/icon-search.svg')
   imagenbuscar.setAttribute("id", 'imagen_buscar')
