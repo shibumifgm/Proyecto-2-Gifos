@@ -321,7 +321,7 @@ let index = 0;
 
 let resultados = document.getElementById("resultados");
 const api_key = "9q0Co8y92A1puokhTuMaeKeO3Y5bsveq";
-const giphysearchurl = "http://api.giphy.com/v1/gifs/search?api_key=";
+const giphysearchurl = "https://api.giphy.com/v1/gifs/search?api_key=";
 let input = document.getElementById("buscar");
 let imagenbuscar = document.getElementById("imagen_buscar");
 
@@ -337,7 +337,7 @@ let iconofavorito = document.getElementsByClassName("favorito");
 
 // autocompletar
 
-const giphyautocompleteurl = "http://api.giphy.com/v1/gifs/search/tags?api_key=";
+const giphyautocompleteurl = "https://api.giphy.com/v1/gifs/search/tags?api_key=";
 let divbuscador = document.getElementById("buscador");
 let espaciosugerencias = document.getElementsByClassName("espaciosugerencias");
 let espaciosugerencias2 = Array.from(espaciosugerencias);
